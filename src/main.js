@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
     <li><a href="#home">top</a></li>
     <li><a href="#about">about</a></li>
     <li><a href="#projects">projects</a></li>
-    <li><a href="#skills">skills</a></li>
+    <li><a href="#skills and certifications">skills and certifications</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
 </nav>
@@ -45,6 +45,9 @@ document.querySelector('#app').innerHTML = `
       <div class="tags">
         <span class="tag">FastAPI</span>
         <span class="tag">Anthropic API</span>
+        <span class="tag">Google API</span>
+        <span class="tag">OpenAI API</span>
+        <span class="tag">LLM</span>
         <span class="tag">FAISS</span>
         <span class="tag">Amazon OpenSearch</span>
         <span class="tag">BM25</span>
@@ -87,11 +90,13 @@ document.querySelector('#app').innerHTML = `
         Full-stack web-based property management system for Monterde Apartments covering tenant management, room allocation, payment tracking, and data visualization for occupancy and revenue analytics. Built with a RESTful Node.js/Express.js backend, MySQL database, and a dynamic frontend using Bootstrap and JavaScript. Handled deployment to Render, database connection setup, and the complete room management module.
       </p>
       <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
         <span class="tag">Node.js</span>
         <span class="tag">Express.js</span>
         <span class="tag">MySQL</span>
         <span class="tag">Bootstrap</span>
-        <span class="tag">JavaScript</span>
         <span class="tag">Render</span>
       </div>
       <div class="project-links">
@@ -162,15 +167,87 @@ document.querySelector('#app').innerHTML = `
 
 </section>
 
-<section id="skills" class="container">
+<section id="skills-and-certifications" class="container">
+  <!-- SKILLS -->
   <div class="section-label">Skills</div>
   <div class="skills-grid">
-    <div class="skill-block reveal"><div class="skill-label">Languages</div><div class="skill-val">Python, JavaScript, Java, C/C++, C#, HTML, CSS</div></div>
-    <div class="skill-block reveal"><div class="skill-label">Frameworks</div><div class="skill-val">Node.js, FastAPI, LangChain, Streamlit, Express.js, Bootstrap</div></div>
-    <div class="skill-block reveal"><div class="skill-label">AI & ML</div><div class="skill-val">RAG, LLM APIs, Prompt Engineering, NLP, Amazon Bedrock</div></div>
-    <div class="skill-block reveal"><div class="skill-label">Cloud & DB</div><div class="skill-val">AWS, MySQL, PostgreSQL, Amazon OpenSearch, Render</div></div>
-    <div class="skill-block reveal"><div class="skill-label">Tools</div><div class="skill-val">Git, GitHub, Arduino, ESP32, Figma, REST APIs</div></div>
-    <div class="skill-block reveal"><div class="skill-label">Certifications</div><div class="skill-val">AWS AI Practitioner, IT Specialist Data Analytics, MOS Excel</div></div>
+    <div class="skill-block reveal">
+      <div class="skill-label">Languages</div>
+      <div class="skill-val">Python, JavaScript, Java, C/C++, C#, HTML, CSS</div>
+    </div>
+
+    <div class="skill-block reveal">
+      <div class="skill-label">Frameworks</div>
+      <div class="skill-val">Node.js, FastAPI, LangChain, Streamlit, Express.js, Bootstrap</div>
+    </div>
+
+    <div class="skill-block reveal">
+      <div class="skill-label">AI & ML</div>
+      <div class="skill-val">RAG, LLM APIs, Prompt Engineering, NLP</div>
+    </div>
+
+    <div class="skill-block reveal">
+      <div class="skill-label">Cloud & DB</div>
+      <div class="skill-val">AWS, MySQL, PostgreSQL, Amazon OpenSearch, Render</div>
+    </div>
+
+    <div class="skill-block reveal">
+      <div class="skill-label">Tools</div>
+      <div class="skill-val">Git, GitHub, Arduino, ESP32, Figma, REST APIs</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section-label" style="margin-top: 3rem;">Certifications</div>
+
+  <div class="certifications-grid">
+
+    <div class="cert-block reveal">
+      <div class="cert-title">Microsoft Office Specialist (Excel)</div>
+      <div class="cert-org">Microsoft</div>
+      <a class="cert-link" href="https://www.credly.com/badges/2d15fdf0-6efb-4432-b193-3414aea5c4fc/public_url" target="_blank">
+        Check it out here →
+      </a>
+    </div>
+
+    <div class="cert-block reveal">
+      <div class="cert-title">AWS Certified AI Practitioner</div>
+      <div class="cert-org">Amazon Web Services</div>
+      <a class="cert-link" href="https://www.credly.com/badges/919fdd7d-6e51-4097-8fff-9c941a9bdca9/public_url" target="_blank">
+        Check it out here →
+      </a>
+    </div>
+
+    <div class="cert-block reveal">
+      <div class="cert-title">IT Specialist – Data Analytics</div>
+      <div class="cert-org">Certiport</div>
+      <a class="cert-link" href="https://www.credly.com/badges/da82ceb8-3d7b-4bba-adcc-758d82a26749/public_url" target="_blank">
+        Check it out here →
+      </a>
+    </div>
+
+    <div class="cert-block reveal">
+      <div class="cert-title">AWS Academy Graduate</div>
+      <div class="cert-org">Cloud Foundations · Generative AI · Cloud Operations</div>
+    </div>
+
+    <div class="cert-block reveal">
+      <div class="cert-title">Data Science & Networking Foundations</div>
+      <div class="cert-org">IBM / Coursera</div>
+    </div>
+
+    <div class="cert-block reveal">
+      <div class="cert-title">Google UX Design Certificates</div>
+      <div class="cert-org">Foundations · Wireframing · Research · High-Fidelity</div>
+    </div>
+
+  </div>
+
+  <!-- optional link section -->
+  <div style="margin-top: 1rem; font-size: 12px;">
+    <a href="https://www.credly.com/users/marga-pilapil" target="_blank" style="color: var(--red); text-decoration: none;">
+      → View all my badges & certificates on Credly
+    </a>
   </div>
 </section>
 

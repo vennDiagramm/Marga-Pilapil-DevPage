@@ -111,6 +111,17 @@ nav {
 .skill-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 6px; }
 .skill-val { font-size: 13px; color: var(--muted2); line-height: 1.65; }
 
+.certifications-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.cert-block { background: var(--s1); border: 1px solid var(--border); border-radius: 6px; padding: 1rem 1.1rem; transition: transform 0.2s ease, border-color 0.2s ease; display: block; text-decoration: none; color: inherit; }
+.cert-block:visited { color: inherit; }
+.cert-block:hover { transform: translateY(-2px); border-color: var(--red); }
+.cert-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.cert-org { font-size: 11px; color: var(--muted2); margin-bottom: 2px; }
+.cert-year { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); }
+.cert-link { font-size: 11px; color: var(--muted2); text-decoration: none; font-weight: 400; opacity: 0.85; }
+.cert-link:hover { color: var(--red); opacity: 1; }
+
+
 .about-text { font-size: 16px; color: var(--muted2); line-height: 1.85; max-width: 580px; }
 .about-text strong { color: var(--text); font-weight: 500; }
 .personal-row { display: flex; gap: 10px; margin-top: 1.5rem; flex-wrap: wrap; }
