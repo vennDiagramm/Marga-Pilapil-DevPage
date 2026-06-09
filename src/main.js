@@ -3,15 +3,24 @@ import profilePic from './assets/ems_square.png'
 
 document.querySelector('#app').innerHTML = `
 <nav>
-  <span class="nav-logo">marga<span>.dev</span></span>
+  <span class="nav-logo">ven<span>.dev</span></span>
   <ul class="nav-links">
     <li><a href="#home">top</a></li>
     <li><a href="#about">about</a></li>
     <li><a href="#projects">projects</a></li>
-    <li><a href="#skills and certifications">skills and certifications</a></li>
+    <li><a href="#skills-certifications">skills & certs</a></li>
     <li><a href="#contact">contact</a></li>
   </ul>
+  <button class="nav-toggle" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
 </nav>
+
+<div class="nav-drawer" id="nav-drawer">
+  <a href="#home">top</a>
+  <a href="#about">about</a>
+  <a href="#projects">projects</a>
+  <a href="#skills-certifications">skills & certs</a>
+  <a href="#contact">contact</a>
+</div>
 
 <section id="home" class="hero">
   <div class="hero-left">
@@ -167,7 +176,7 @@ document.querySelector('#app').innerHTML = `
 
 </section>
 
-<section id="skills-and-certifications" class="container">
+<section id="skills-certifications" class="container">
   <!-- SKILLS -->
   <div class="section-label">Skills</div>
   <div class="skills-grid">
@@ -301,3 +310,11 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 })
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el))
+
+// Hamburger menu
+const toggle = document.querySelector('.nav-toggle')
+const drawer = document.getElementById('nav-drawer')
+toggle.addEventListener('click', () => drawer.classList.toggle('open'))
+drawer.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => drawer.classList.remove('open'))
+})
